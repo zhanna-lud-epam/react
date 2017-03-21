@@ -1,26 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './Header';
-
-const menu = [
-  {
-    link: '/articles',
-    label: 'Articles'
-  },
-  {
-    link: '/contacts',
-    label: 'Contacts'
-  },
-  {
-    link: '/home',
-    label: 'Home'
-  }
-]
+import RegistrationForm from './RegistrationForm';
 
 class App extends Component {
   render() {
     return (
-      <Header items={menu}/>
+      <div> <RegistrationForm/> </div>
     );
   }
 }
