@@ -1,11 +1,26 @@
 import React, { Component } from 'react';
 import './App.css';
-import Dropdown from './Dropdown';
+import Header from './Header';
+
+const menu = [
+  {
+    link: '/articles',
+    label: 'Articles'
+  },
+  {
+    link: '/contacts',
+    label: 'Contacts'
+  },
+  {
+    link: '/home',
+    label: 'Home'
+  }
+]
 
 class App extends Component {
   render() {
     return (
-      <Dropdown/>
+      <Header items={menu}/>
     );
   }
 }
