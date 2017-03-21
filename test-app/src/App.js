@@ -4,9 +4,11 @@ import RegistrationForm from './RegistrationForm';
 
 class App extends Component {
   render() {
-    return (
-      <div> <RegistrationForm/> </div>
-    );
+      return (
+          <div className="container">
+              <RegistrationForm/>
+          </div>
+      );
   }
 }
 
